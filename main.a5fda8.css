@@ -159,7 +159,7 @@ body {
   /* background-color:#fff; */
   min-height:100%;
   background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
-  url('https://liangliang723blog.oss-cn-shenzhen.aliyuncs.com/you.jpg?Expires=1585983769&OSSAccessKeyId=TMP.3Kg3qS2WBdKayhi47QcstzTUUrC52GvaizfFcvjmmNjMLiHh9nFdsVmUh3hRQ9zJP7C2Xf6AordpHpEifwmn9MZ82V6kFk&Signature=01g%2FK0XTF89IhV9aqrwbSGOOkrc%3D') no-repeat 0% 0%/ cover;
+  url('https://gitee.com/LiangLiang723/BlogPhoto/raw/master/img/you.jpg') no-repeat 0% 0%/ cover;
 }
 
 display: block
