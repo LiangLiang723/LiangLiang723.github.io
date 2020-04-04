@@ -159,7 +159,7 @@ body {
   /* background-color:#fff; */
   min-height:100%;
   background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
-  url('https://gitee.com/LiangLiang723/BlogPhoto/raw/master/img/you.jpg') no-repeat 0% 0%/ cover;
+  url('https://raw.githubusercontent.com/LiangLIang723/BlogPhoto/master/you.jpg') no-repeat 0% 0%/ cover;
 }
 
 display: block
