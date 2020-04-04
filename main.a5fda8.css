@@ -159,8 +159,13 @@ body {
   /* background-color:#fff; */
   min-height:100%;
   background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
-  url('https://raw.githubusercontent.com/LiangLIang723/BlogPhoto/master/you.jpg') no-repeat 0% 0%/ cover;
+  url('https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/you2.jpg') no-repeat 0% 0%/ cover;
 }
+/* 手机端换用一张背景图片，可以不使用 */
+@media screen and (max-width:800px) {
+    body {
+		background: url('https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/telphone.jpg') no-repeat fixed top;
+    }
 
 display: block
 }
