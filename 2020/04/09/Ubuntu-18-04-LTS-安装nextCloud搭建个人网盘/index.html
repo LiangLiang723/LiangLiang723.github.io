@@ -6,34 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://liangliang723.online">
-  <title>用PicGO+GitHub或Gitee制作免费图床 | liangliang&#39;blog</title>
+  <title>Ubuntu 18.04 LTS 安装nextCloud搭建个人网盘 | liangliang&#39;blog</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="1. 注册Github并创建仓库及Token 1.1. 注册一个GitHub账号 1.2. 创建一个新的仓库 1.3. 创建Token   2. 安装并配置PicGo 2.1. 下载安装PicGO 2.2. 配置GitHub图床   3. 使用Gitee配置图床 3.1. 前期配置 3.2. 下载插件后配置PicGo">
+  <meta name="description" content="1.1. 更新库 1.2. 安装snap 1.3. 安装nextcloud 1.4. 打开地址输入用户名即可使用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="用PicGO+GitHub或Gitee制作免费图床">
-<meta property="og:url" content="http://liangliang723.online/2020/04/05/%E7%94%A8PicGO-GitHub%E6%88%96Gitee%E5%88%B6%E4%BD%9C%E5%85%8D%E8%B4%B9%E5%9B%BE%E5%BA%8A/index.html">
+<meta property="og:title" content="Ubuntu 18.04 LTS 安装nextCloud搭建个人网盘">
+<meta property="og:url" content="http://liangliang723.online/2020/04/09/Ubuntu-18-04-LTS-%E5%AE%89%E8%A3%85nextCloud%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%9B%98/index.html">
 <meta property="og:site_name" content="liangliang&#39;blog">
-<meta property="og:description" content="1. 注册Github并创建仓库及Token 1.1. 注册一个GitHub账号 1.2. 创建一个新的仓库 1.3. 创建Token   2. 安装并配置PicGo 2.1. 下载安装PicGO 2.2. 配置GitHub图床   3. 使用Gitee配置图床 3.1. 前期配置 3.2. 下载插件后配置PicGo">
+<meta property="og:description" content="1.1. 更新库 1.2. 安装snap 1.3. 安装nextcloud 1.4. 打开地址输入用户名即可使用">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/PicGO3.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/PicGo4.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/PicGo/5.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/PicGo/7.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/PicGo/6.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/%E7%94%A8PicGO-1.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/PicGO2.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/PicGo/20200405145925.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/PicGo/20200405150144.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/PicGo/20200405151024.png">
-<meta property="article:published_time" content="2020-04-05T04:47:41.000Z">
-<meta property="article:modified_time" content="2020-04-09T13:08:18.932Z">
+<meta property="article:published_time" content="2020-04-09T12:34:35.000Z">
+<meta property="article:modified_time" content="2020-04-09T13:09:22.247Z">
 <meta property="article:author" content="liangliang">
 <meta property="article:tag" content="技术总结">
-<meta property="article:tag" content="PicGO">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/PicGO3.png">
   
     <link rel="alternative" href="/atom.xml" title="liangliang&#39;blog" type="application/atom+xml">
   
@@ -239,14 +227,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-用PicGO-GitHub或Gitee制作免费图床" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Ubuntu-18-04-LTS-安装nextCloud搭建个人网盘" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      用PicGO+GitHub或Gitee制作免费图床
+      Ubuntu 18.04 LTS 安装nextCloud搭建个人网盘
     </h1>
   
 
@@ -258,8 +246,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2020/04/05/%E7%94%A8PicGO-GitHub%E6%88%96Gitee%E5%88%B6%E4%BD%9C%E5%85%8D%E8%B4%B9%E5%9B%BE%E5%BA%8A/" class="archive-article-date">
-        <time datetime="2020-04-05T04:47:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-05</time>
+<a href="/2020/04/09/Ubuntu-18-04-LTS-%E5%AE%89%E8%A3%85nextCloud%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%9B%98/" class="archive-article-date">
+        <time datetime="2020-04-09T12:34:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-09</time>
 </a>
 
   
@@ -272,7 +260,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">379字</span>
+      <span class="post-count">69字</span>
     </span>
   </span>
 
@@ -295,36 +283,18 @@
     <!-- TOC -->
 
 <ul>
-<li><a href="#1-注册github并创建仓库及token">1. 注册Github并创建仓库及Token</a><ul>
-<li><a href="#11-注册一个github账号">1.1. 注册一个GitHub账号</a></li>
-<li><a href="#12-创建一个新的仓库">1.2. 创建一个新的仓库</a></li>
-<li><a href="#13-创建token">1.3. 创建Token</a></li>
-</ul>
-</li>
-<li><a href="#2-安装并配置picgo">2. 安装并配置PicGo</a><ul>
-<li><a href="#21-下载安装picgo">2.1. 下载安装PicGO</a></li>
-<li><a href="#22-配置github图床">2.2. 配置GitHub图床</a></li>
-</ul>
-</li>
-<li><a href="#3-使用gitee配置图床">3. 使用Gitee配置图床</a><ul>
-<li><a href="#31-前期配置">3.1. 前期配置</a></li>
-<li><a href="#32-下载插件后配置picgo">3.2. 下载插件后配置PicGo</a></li>
-</ul>
-</li>
+<li><a href="#11-更新库">1.1. 更新库</a></li>
+<li><a href="#12-安装snap">1.2. 安装snap</a></li>
+<li><a href="#13-安装nextcloud">1.3. 安装nextcloud</a></li>
+<li><a href="#14-打开地址输入用户名即可使用">1.4. 打开地址输入用户名即可使用</a></li>
 </ul>
 <!-- /TOC -->
 <a id="more"></a>
 
-
-
-<h1 id="1-注册Github并创建仓库及Token"><a href="#1-注册Github并创建仓库及Token" class="headerlink" title="1. 注册Github并创建仓库及Token"></a>1. 注册Github并创建仓库及Token</h1><h2 id="1-1-注册一个GitHub账号"><a href="#1-1-注册一个GitHub账号" class="headerlink" title="1.1. 注册一个GitHub账号"></a>1.1. 注册一个GitHub账号</h2><p><a href="https://github.com/" target="_blank" rel="noopener">GitHub官网</a></p>
-<h2 id="1-2-创建一个新的仓库"><a href="#1-2-创建一个新的仓库" class="headerlink" title="1.2. 创建一个新的仓库"></a>1.2. 创建一个新的仓库</h2><p><img src="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/PicGO3.png" alt=""><br>点击左上角的new,仓库名自取,选择公开,README可自行选择<br><img src="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/PicGo4.png" alt=""></p>
-<h2 id="1-3-创建Token"><a href="#1-3-创建Token" class="headerlink" title="1.3. 创建Token"></a>1.3. 创建Token</h2><p>选择Setting<br><img src="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/PicGo/5.png" alt=""><br>进入Developer settings选择Personal access tokens新建一个Token<br><img src="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/PicGo/7.png" alt=""><br>选择repo名字自取,创建成功后记住Topken<br><img src="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/PicGo/6.png" alt=""></p>
-<h1 id="2-安装并配置PicGo"><a href="#2-安装并配置PicGo" class="headerlink" title="2. 安装并配置PicGo"></a>2. 安装并配置PicGo</h1><h2 id="2-1-下载安装PicGO"><a href="#2-1-下载安装PicGO" class="headerlink" title="2.1. 下载安装PicGO"></a>2.1. 下载安装PicGO</h2><p><a href="https://github.com/Molunerfinn/PicGo/releases" target="_blank" rel="noopener">PicGo下载地址</a><br>选择最新版本<br><img src="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/%E7%94%A8PicGO-1.png" alt=""><br>进入页面后下拉道最后,选择符合系统的安装包,如果是win系统就选择exe包<br><img src="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/PicGO2.png" alt=""><br>下载下来后按照提示安装</p>
-<h2 id="2-2-配置GitHub图床"><a href="#2-2-配置GitHub图床" class="headerlink" title="2.2. 配置GitHub图床"></a>2.2. 配置GitHub图床</h2><p>进入程序后配置Github图床,仓库名是Github名字上仓库名,分类里天master,然后填入刚才的Token<br><img src="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/PicGo/20200405145925.png" alt=""><br>然后在上传区上传图片即可,上传后到相册里复制图片地址就能直接使用了<br><img src="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/PicGo/20200405150144.png" alt=""></p>
-<h1 id="3-使用Gitee配置图床"><a href="#3-使用Gitee配置图床" class="headerlink" title="3. 使用Gitee配置图床"></a>3. 使用Gitee配置图床</h1><h2 id="3-1-前期配置"><a href="#3-1-前期配置" class="headerlink" title="3.1. 前期配置"></a>3.1. 前期配置</h2><p>步骤和Github一样注册一个账号后新建仓库及Token</p>
-<h2 id="3-2-下载插件后配置PicGo"><a href="#3-2-下载插件后配置PicGo" class="headerlink" title="3.2. 下载插件后配置PicGo"></a>3.2. 下载插件后配置PicGo</h2><p>点击插件设置后输入Gitee两个插件选择一个安装后就会出现Gitee配置窗口,之后配置参见上述Github配置<br><img src="https://raw.githubusercontent.com/LiangLiang723/BlogPhoto/master/PicGo/20200405151024.png" alt=""></p>
-
+<h2 id="1-1-更新库"><a href="#1-1-更新库" class="headerlink" title="1.1. 更新库"></a>1.1. 更新库</h2><p><code>sudo apt-get update</code></p>
+<h2 id="1-2-安装snap"><a href="#1-2-安装snap" class="headerlink" title="1.2. 安装snap"></a>1.2. 安装snap</h2><p><code>sudo apt install snapd</code></p>
+<h2 id="1-3-安装nextcloud"><a href="#1-3-安装nextcloud" class="headerlink" title="1.3. 安装nextcloud"></a>1.3. 安装nextcloud</h2><p><code>snap install nextcloud</code></p>
+<h2 id="1-4-打开地址输入用户名即可使用"><a href="#1-4-打开地址输入用户名即可使用" class="headerlink" title="1.4. 打开地址输入用户名即可使用"></a>1.4. 打开地址输入用户名即可使用</h2>
     
 
     
@@ -370,7 +340,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="http://liangliang723.online/2020/04/05/用PicGO-GitHub或Gitee制作免费图床/" title="用PicGO+GitHub或Gitee制作免费图床" target="_blank">http://liangliang723.online/2020/04/05/用PicGO-GitHub或Gitee制作免费图床/</a>
+          <a href="http://liangliang723.online/2020/04/09/Ubuntu-18-04-LTS-安装nextCloud搭建个人网盘/" title="Ubuntu 18.04 LTS 安装nextCloud搭建个人网盘" target="_blank">http://liangliang723.online/2020/04/09/Ubuntu-18-04-LTS-安装nextCloud搭建个人网盘/</a>
         </li>
         
         <li>
@@ -393,10 +363,6 @@
 			 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术总结</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">PicGO</a>
         		</li>
       		
 		</ul>
@@ -452,7 +418,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://liangliang723.online/2020/04/05/%E7%94%A8PicGO-GitHub%E6%88%96Gitee%E5%88%B6%E4%BD%9C%E5%85%8D%E8%B4%B9%E5%9B%BE%E5%BA%8A/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://liangliang723.online/2020/04/09/Ubuntu-18-04-LTS-%E5%AE%89%E8%A3%85nextCloud%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%9B%98/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -467,18 +433,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2020/04/09/Ubuntu-18-04-LTS-%E5%AE%89%E8%A3%85nextCloud%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%9B%98/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Ubuntu 18.04 LTS 安装nextCloud搭建个人网盘
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/04/04/%E8%8B%B1%E9%9B%84%E4%B8%8D%E6%9C%BD/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">英雄不朽</div>
+    <a href="/2020/04/05/%E7%94%A8PicGO-GitHub%E6%88%96Gitee%E5%88%B6%E4%BD%9C%E5%85%8D%E8%B4%B9%E5%9B%BE%E5%BA%8A/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">用PicGO+GitHub或Gitee制作免费图床</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -505,7 +462,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-注册Github并创建仓库及Token"><span class="toc-number">1.</span> <span class="toc-text">1. 注册Github并创建仓库及Token</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-注册一个GitHub账号"><span class="toc-number">1.1.</span> <span class="toc-text">1.1. 注册一个GitHub账号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-创建一个新的仓库"><span class="toc-number">1.2.</span> <span class="toc-text">1.2. 创建一个新的仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-创建Token"><span class="toc-number">1.3.</span> <span class="toc-text">1.3. 创建Token</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-安装并配置PicGo"><span class="toc-number">2.</span> <span class="toc-text">2. 安装并配置PicGo</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-下载安装PicGO"><span class="toc-number">2.1.</span> <span class="toc-text">2.1. 下载安装PicGO</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-配置GitHub图床"><span class="toc-number">2.2.</span> <span class="toc-text">2.2. 配置GitHub图床</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-使用Gitee配置图床"><span class="toc-number">3.</span> <span class="toc-text">3. 使用Gitee配置图床</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-前期配置"><span class="toc-number">3.1.</span> <span class="toc-text">3.1. 前期配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-下载插件后配置PicGo"><span class="toc-number">3.2.</span> <span class="toc-text">3.2. 下载插件后配置PicGo</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-更新库"><span class="toc-number">1.</span> <span class="toc-text">1.1. 更新库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-安装snap"><span class="toc-number">2.</span> <span class="toc-text">1.2. 安装snap</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-安装nextcloud"><span class="toc-number">3.</span> <span class="toc-text">1.3. 安装nextcloud</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-4-打开地址输入用户名即可使用"><span class="toc-number">4.</span> <span class="toc-text">1.4. 打开地址输入用户名即可使用</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -529,9 +486,9 @@
     <script src="/lib/giteement.browser.js"></script>
   
   <script>
-  <!-- id: "用PicGO+GitHub或Gitee制作免费图床" -->
+  <!-- id: "Ubuntu 18.04 LTS 安装nextCloud搭建个人网盘" -->
   var giteement = new Giteement({
-    id: '20200405124741',
+    id: '20200409203435',
     owner: 'LiangLiang723',
     repo: 'MyComments',
     backcall_uri: 'http://liangliang723.gitee.io',
